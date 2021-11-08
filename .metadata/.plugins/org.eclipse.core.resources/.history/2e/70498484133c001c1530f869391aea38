@@ -1,0 +1,39 @@
+/*
+ * 2) Elabore um sistema que leia as variáveis C e N, 
+ * respectivamente código e número de horas trabalhadas de um operário. 
+ * E calcule o salário sabendo-se que ele ganha R$ 10,00 por hora. 
+ * Quando o número de horas exceder a 50 calcule o excesso 
+ * de pagamento armazenando-o na variável E, caso contrário zerar tal variável. 
+ * A hora excedente de trabalho vale R$ 20,00. No final do processamento imprimir 
+ * o salário total e o salário excedente.
+ * 
+ * */
+
+import java.util.Scanner;
+
+public class Exercicio2 {
+		public static void main(String[] args) {
+			int c;
+			double n, e, total;
+			Scanner s = new Scanner(System.in);
+			
+			System.out.println("Qual o código do trabalhador? ");
+			c = s.nextDouble();
+			
+			System.out.println("Qual o número de horas trabalhadas? ");
+			n = s.nextDouble();
+			
+			if (n>50) {
+				e = n-50.00;
+				total = 500.00 + e*20.00;
+			} else {
+				e = 0;
+				total = n*10.00;
+			}
+			
+			System.out.println("O trabalhador código "+ c +" deverá receber R$"+total+" no total, sendo R$"+e+" referentes à horas extras.");
+			
+			s.close();
+		
+		}
+}

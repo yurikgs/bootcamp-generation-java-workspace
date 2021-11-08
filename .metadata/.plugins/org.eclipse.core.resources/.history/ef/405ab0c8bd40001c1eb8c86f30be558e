@@ -1,0 +1,34 @@
+/*
+ * 4) Faça um sistema que leia um número inteiro e mostre uma mensagem 
+ * indicando se este número é par ou ímpar, e se é positivo ou negativo.
+ * 
+ * */
+
+import java.util.Scanner;
+
+public class Exercicio4 {
+	public static void main(String[] args) {
+			int numero;
+			String paridade, sinal;
+			Scanner s = new Scanner(System.in);
+			
+			System.out.println("Qual o número? ");
+			numero = s.nextInt();
+			
+			if (numero % 2 == 0) {
+					paridade = "par";
+			} else {
+				paridade = "ímpar";
+			}
+			
+			if (numero>0) {
+				sinal = "positivo";
+			} else if (numero == 0) {
+					sinal = "neutro";
+			} else {
+				sinal = "negativo";
+			}
+			
+			System.out.println("O seu número é "+sinal+" e "+paridade+".");
+	}
+}
