@@ -1,9 +1,11 @@
 package br.com.pool2ex3;
 
-public interface Funcionalidades {
+import java.util.ArrayList;
 
-	void armazenar();
-	void remover();
-	void atualizar();
-	void apresentar();
+public interface Funcionalidades {
+	
+	int armazenar(ArrayList<?> lista, int numeroDaLista);
+	int remover(ArrayList<?> lista);
+	int atualizar(ArrayList<?> lista);
+	int apresentar(ArrayList<?> lista);
 }

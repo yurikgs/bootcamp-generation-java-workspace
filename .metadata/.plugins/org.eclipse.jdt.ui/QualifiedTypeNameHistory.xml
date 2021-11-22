@@ -7,8 +7,12 @@
     <fullyQualifiedTypeName name="java.lang.Thread"/>
     <fullyQualifiedTypeName name="java.lang.InterruptedException"/>
     <fullyQualifiedTypeName name="br.com.exercicio3.ProdutoEletronico"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="br.com.documentacao.AnimalMetodos"/>
     <fullyQualifiedTypeName name="br.com.documentacao.Cachorro"/>
     <fullyQualifiedTypeName name="br.com.documentacao.Preguiça"/>
+    <fullyQualifiedTypeName name="br.com.pool2ex3.EntradaSaida"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="br.com.pool2ex3.Carnes"/>
+    <fullyQualifiedTypeName name="br.com.pool2ex3.Produtos"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
 </qualifiedTypeNameHistroy>

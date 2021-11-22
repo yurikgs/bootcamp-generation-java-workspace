@@ -1,28 +1,72 @@
 package br.com.pool2ex3;
 
+import java.util.ArrayList;
 
 public class ExecutaLista {
 		
-		public static void main(String[] args) {				
-				
-			int resposta;
+		private static final String String = null;
+
+		public static void main(String[] args, int ArrayList) {				
+			//DECLARAÇÃO DE VARIÁVEIS	
+			int numeroLista, numeroFuncao, numeroContinua = 0;
+			ArrayList<String> nomesDasListas = new ArrayList<String>();
 			
-				Produtos produtos = new Produtos();
-				resposta = produtos.boasVindas();
-				produtos.criaListapedida(resposta);
+			// CRIAÇÃO DA BASE DE DADOS
+			
+			ArrayList<ArrayList<?>> listaDeSetores = new ArrayList<ArrayList<?>>();
+			
+			ArrayList<Bebidas> bebidas = Bebidas.criarLista();
+			ArrayList<Carnes> carnes = Carnes.criarLista();
+			ArrayList<Laticinios> laticinios = Laticinios.criarLista();
+			ArrayList<Padaria> padaria = Padaria.criarLista();
+			
+			listaDeSetores.add(bebidas);
+			nomesDasListas.add("bebidas");
+			listaDeSetores.add(carnes);
+			nomesDasListas.add("carnes");
+			listaDeSetores.add(laticinios);
+			nomesDasListas.add("laticinios");
+			listaDeSetores.add(padaria);
+			nomesDasListas.add("padaria");
+			
+			
+			//STATEMENTS
 				
-				//Próximo passo: criar funções estáticas criaListaPedida(); em cada classe -> Consultar: Como fazer interface com métodos estáticos???
-				//Verificar funcionamento
+			Produtos produtos = new Produtos();
+			numeroLista = produtos.boasVindas();
+			numeroFuncao = produtos.perguntaFuncionalidades();			
+			
+			while (numeroContinua==0) { //  numeroContinua == 1 encerra o programa. 
+				numeroContinua = produtos.executaFuncao(numeroFuncao, listaDeSetores.get(numeroLista), nomesDasListas.get(numeroLista));
+				
+				if (numeroContinua==0) {
+					numeroLista = produtos.perguntaListas();
+					numeroFuncao = produtos.perguntaFuncionalidades();
+				}
+			
+				produtos.despedidaUsuario();
+				
+			}
+			
+			
+			
+			System.out.println(listaDeSetores.get(0));
+				
+				
+				
+				
+
+
+				
 				//implementar função perguntafuncionalidades();
 				//implementar funcionalidades
 				//implementar despedidia
+				//implementar método de espera (...) humanização
+				//organizar as classes e interfaces em pacotes
 				
-						//Correção: fazer os elementos com toString() com toString <--- // -> não deu certo!
-						//Não deu certo --> fazer teste com um outro nome qualquer -- https://pt.stackoverflow.com/questions/212754/qual-%c3%a9-a-fun%c3%a7%c3%a3o-do-m%c3%a9todo-tostring
-			    
 			}
 
 
 
-
+		
 }

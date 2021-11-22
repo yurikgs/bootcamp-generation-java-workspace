@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Carnes extends Produtos {
    
-	static ArrayList<Carnes> criarLista()  { // <--- forma de declarar um método q retorna objeto
+	static ArrayList<Carnes> criarLista()  { // <--- forma de declarar um método q retorna objeto tipo ArrayList
 	   
 	   
 				    Carnes picanha = new Carnes();
@@ -46,6 +46,6 @@ public class Carnes extends Produtos {
 		String nome = this.getNome();
 		int preco = this.getPreco();
 		String tipo = this.getTipo();
-		return (" | nome: "+nome+", preço: "+preco+" tipo: "+tipo+" |");
+		return ("\n | nome: "+nome+", preço: "+preco+" tipo: "+tipo+" |");
 	}
 }
